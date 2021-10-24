@@ -1,0 +1,442 @@
+font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Montserrat', sans-serif;
+
+.body {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/**    container  **/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+/**    header   **/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header__header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    text-decoration: none;
+}
+.header__logo h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 89px;
+    color: #d03958;
+}
+.header__nav-link{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1b1b1b;
+    border-radius: 5px;
+}
+.header__nav-link:hover {
+    background-color: #d03958;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+/**    intro    **/
+.intro {
+    
+    height: 100vh;
+    width: 100%;
+    background: #bfb59f no-repeat ;
+    background-position: center;
+    background-size: cover;
+}
+.intro__inner {
+    float: left;
+    margin-top: 200px;
+    width: 520px;
+    font-family: 'PT Serif', serif; 
+}
+.intro__inner-name {
+    color: #d03958;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+.intro__inner-name div {
+    color: black;
+}
+
+
+
+
+/**   intro--form   **/
+
+.intro--form {
+   position: absolute;
+   z-index: 10;
+   top: 200px;
+   right: 0;
+}
+.intro__form__inner {
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    height: 520px;
+    padding: 25px;
+    background-color: #d03958;
+    border-radius: 5%;
+}
+.form-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 25px; 
+}
+.form-field {
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 8px;
+}
+.check-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.check-box__lable{
+    margin-left: 26px;
+    color: #fff;
+    padding: 8px;
+    align-items: center;
+}
+.button-submit{
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+   
+    font-size: 24px;
+    background-color: #161616;
+    border-radius: 5px;
+}
+.button-submit:hover{
+    background-color: #2e2929;
+}
+
+
+
+
+
+
+
+
+/**    title   **/
+
+.title {
+    color: #161616;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.title span{
+    color: #d03958;
+}
+
+
+
+
+/**    Service card    **/
+
+.services {
+    margin: 40px 0;
+}
+.services__intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.service__card {
+    display: flex;  
+    align-items: flex-end;
+    width: 170px;
+    
+    text-align: center;
+}
+.service__card a {
+    text-decoration: none;
+}
+.servis__name {
+    margin-top: 40px;
+    color: #161616;
+    font-weight: 500;
+}
+
+
+
+/**    Story section   **/
+
+.story {
+    background-color: #d03958;
+}
+.story__inner {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 30px 0;
+}
+.story__about {
+    color: #fff;
+    width: 60%;
+    
+    line-height: 1.5;
+}
+.story__btn {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    color: #161616;
+
+    background-color: #e3d5b8;
+    padding: 25px 70px;
+    border-radius: 5px;
+}
+.story__btn:hover {
+    background-color: #d3c2a0;
+    transition: 0.3s;
+}
+
+
+
+
+
+/**    Price section   **/
+.price--section{
+    background-color: #e3d5b8;
+    align-items: center;
+}
+.price{
+    text-align: center;
+    padding: 60px 0;
+}
+.pricing__cards {
+    display: flex;
+    justify-content: space-between;
+}
+.pricing__card--item {
+    width: 30%;
+    background-color: #fff;
+    
+}
+.card--inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card--titile {
+    margin: 30px 0;
+}
+.card--price {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #d03958;
+
+}
+.card--about {
+    list-style-type: none;
+    padding-left: 0;
+}
+.card--about li{
+    margin: 5px 0;
+}
+.card--btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #e3d5b8;
+    border-radius: 5px;
+    padding: 15px 55px;
+}
+.red {
+    background-color: #d03958;
+    color: #fff;
+}
+.card--btn:hover{
+    background-color: #b68118;  /* тут не працює ховер ефект */
+    transition: 0.2s;
+}
+
+
+
+/**    testimonial-gallery    **/
+.testimonial-gallery {
+    margin: 100px 0;
+}
+.testimonial-gallery__inner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.testimonial {
+    width: 400px;
+}
+.testimonial__inner {
+    display: flex;
+}
+.testimonial__card {
+    position: absolute;
+}
+.testimonial__card--grey{
+    background-color: #e3d5b8;
+}
+.testimonial__foto {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #dfd9ce;
+    
+    position: relative;
+    top: 33px;
+    left: 92%;
+}
+
+.testimonial__nikname {
+    color: #d03958;
+}
+
+.testimonial__feedBack {
+    margin-bottom: 10px;
+}
+
+
+
+
+.gallery {
+   text-align: center;
+}
+.gallery__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px 0;
+}
+.gallery__foto{
+    margin: 10px;
+    border-radius: 50%; 
+}
+.gallery__load-more-link {
+    text-transform: uppercase;
+    color: #d03958;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**    footer    **/
+.footer {
+    background-color: #161616;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 80px 0;
+}
+.footer__address {
+    color: #fff;
+    font-size: 20px;
+ }
+.footer__address a {
+    text-decoration: none;     
+}
+.footer__address span{
+    color: #83283a;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
